@@ -69,6 +69,7 @@ body{
   object-fit: contain;
   opacity: 0.9;
   filter: grayscale(100%);
+  transform: scale(0.9);
 }
 
 .title-block h1{
