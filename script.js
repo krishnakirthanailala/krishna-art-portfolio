@@ -8,7 +8,6 @@ const modalImg = document.getElementById("modalImg");
 const modalTitle = document.getElementById("modalTitle");
 const modalDesc = document.getElementById("modalDesc");
 const downloadBtn = document.getElementById("downloadBtn");
-const copyLinkBtn = document.getElementById("copyLinkBtn");
 const searchEl = document.getElementById("search");
 const sortEl = document.getElementById("sort");
 
@@ -109,16 +108,6 @@ modalBackdrop.addEventListener("click", closeModal);
 closeBtn.addEventListener("click", closeModal);
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape" && modal.classList.contains("show")) closeModal();
-});
-
-copyLinkBtn.addEventListener("click", async () => {
-  try{
-    await navigator.clipboard.writeText(location.href);
-    copyLinkBtn.textContent = "Copied!";
-    setTimeout(() => (copyLinkBtn.textContent = "Copy link"), 1200);
-  }catch{
-    alert("Copy failed. You can copy the URL from the address bar.");
-  }
 });
 
 searchEl.addEventListener("input", () => {
