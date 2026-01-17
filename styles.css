@@ -55,7 +55,9 @@ body{
 .avatar{
   width: 76px; height: 76px;
   border-radius: 999px;
-  object-fit: cover;
+  object-fit: contain;     /* better for logos */
+  padding: 10px;
+  background: var(--glass-strong);
   border: 1px solid var(--border);
 }
 .avatar.placeholder{
