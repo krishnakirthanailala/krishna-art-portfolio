@@ -41,7 +41,7 @@ body{
 
 .profile{
   display: flex;
-  gap: 18px;
+  gap: 16px;
   align-items: center;
   padding: 18px;
   border-radius: var(--radius);
