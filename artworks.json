@@ -1,38 +1,38 @@
 [
   {
-    "title": "Drawing 1",
-    "file": "assets/art/Drawing1.jpg",
-    "date": "2026-01-10",
-    "description": "Pencil sketch study."
+    "title": "The Red Devil",
+    "file": "assets/art/Ronaldo.jpg",
+    "date": "2026-01-11",
+    "description": "Prime Ronaldo 2008 Celebration."
   },
   {
-    "title": "Drawing kk",
-    "file": "assets/art/KirthanPic3.png",
-    "date": "2026-01-12",
-    "description": "Concept exploration. my pic"
+    "title": "M.S. Dhoni",
+    "file": "assets/art/Cricket1.JPG",
+    "date": "2026-01-11",
+    "description": "2011 Cricket World Cup Final Game-Winning Shot By M.S. Dhoni."
   },
   {
-    "title": "Drawing 3",
-    "file": "assets/art/drawing-3.jpg",
-    "date": "2026-01-15",
-    "description": "Architecture-inspired design."
+    "title": "Goku",
+    "file": "assets/art/Goku.jpg",
+    "date": "2025-06-26",
+    "description": "Goku, The Main Character Of The Anime Dragon Ball Z Known For His Plot Armor."
   },
   {
-    "title": "Drawing 5",
-    "file": "assets/art/drawing-3.jpg",
-    "date": "2026-01-15",
-    "description": "Architecture-inspired design."
+    "title": "Pagani Zonda R",
+    "file": "assets/art/Car2.JPG",
+    "date": "2025-10-12",
+    "description": "One of my dream cars, the Pagani Zonda R known for its design and experience. Only 15 were ever produced."
   },
   {
-    "title": "Drawing 3",
-    "file": "assets/art/drawing-3.jpg",
-    "date": "2026-01-15",
-    "description": "Architecture-inspired design."
+    "title": "Koenigsegg Regera",
+    "file": "assets/art/Car1.jpg",
+    "date": "2025-10-13",
+    "description": "Another one of my dream cars, the Koenigsegg Regera known for its luxury and performance. Only 3 of this kind were ever made."
   },
   {
-    "title": "Drawing 5",
-    "file": "assets/art/drawing-3.jpg",
-    "date": "2026-01-15",
-    "description": "Architecture-inspired design."
+    "title": "Kawasaki Ninja ZX-10R",
+    "file": "assets/art/Bike1.jpg",
+    "date": "2025-7-9",
+    "description": "The Kawasaki Ninja ZX-10R is a liter-class superbike known for its race-bred performance, advanced electronics, and aggressive styling."
   }
 ]
