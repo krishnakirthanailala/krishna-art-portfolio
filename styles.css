@@ -64,8 +64,8 @@ body{
 }
 
 .avatar-logo{
-  width: 20px;
-  height: 20px;
+  width: 48px;
+  height: 48px;
   object-fit: contain;
   opacity: 0.9;
   filter: grayscale(100%);
