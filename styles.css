@@ -41,7 +41,7 @@ body{
 
 .profile{
   display: flex;
-  gap: 16px;
+  gap: 18px;
   align-items: center;
   padding: 18px;
   border-radius: var(--radius);
@@ -51,23 +51,18 @@ body{
   backdrop-filter: blur(10px);
 }
 
-.avatar-wrap{ width: 76px; height: 76px; flex: 0 0 auto; }
-.avatar{
-  width: 76px; height: 76px;
-  border-radius: 999px;
-  object-fit: contain;     /* better for logos */
-  padding: 10px;
-  background: var(--glass-strong);
-  border: 1px solid var(--border);
+.logo-wrap{
+  background: rgba(255,255,255,0.75);
+  border-radius: 12px;
+  padding: 8px;
+  border: 1px solid rgba(0,0,0,0.08);
 }
-.avatar.placeholder{
-  width: 76px; height: 76px;
-  border-radius: 999px;
-  display: grid;
-  place-items: center;
-  font-weight: 600;
-  background: var(--glass-strong);
-  border: 1px solid var(--border);
+
+.logo{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.15));
 }
 
 .title-block h1{
