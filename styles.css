@@ -68,6 +68,7 @@ body{
   height: 48px;
   object-fit: contain;
   opacity: 0.9;
+  filter: grayscale(100%);
 }
 
 .title-block h1{
