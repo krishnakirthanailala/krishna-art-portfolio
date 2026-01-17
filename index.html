@@ -1,1 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Krishna Ailala — Art & Design Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
+<body>
+  <div class="bg-overlay" aria-hidden="true"></div>
+
+  <header class="header">
+    <div class="header-inner">
+      <div class="profile">
+        <div class="avatar-wrap">
+          <!-- Put a photo here if you want -->
+          <!-- <img class="avatar" src="assets/krishna.jpg" alt="Krishna Ailala" /> -->
+          <div class="avatar placeholder" aria-hidden="true">KA</div>
+        </div>
+
+        <div class="title-block">
+          <h1>Krishna Ailala</h1>
+          <p class="subtitle">Architecture • Art • Mathematics</p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <div class="contact-row">
+          <span class="label">Email</span>
+          <a id="emailLink" href="mailto:krishnakirthanailala@gmail.com">krishnakirthanailala@gmail.com</a>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Place</span>
+          <span>Houston, TX</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">School</span>
+          <span>Attucks Middle school</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Phone</span>
+          <a href="tel:8328524553">832-852-4553</a>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Insta</span>
+          <a href="https://instagram.com/k.r.i.s.h.n.a_.7" target="_blank" rel="noreferrer">@k.r.i.s.h.n.a_.7</a>
+        </div>
+
+        <div class="note">
+          Tip: For public sharing, hide phone/school (see “Public-safe mode” in script.js).
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="card">
+      <h2>About</h2>
+      <p>
+        From a young age, I found myself captivated by the way structures shape the world around us, leading me to explore
+        architecture not just as a field of study, but as a medium for creativity and problem-solving. Alongside this,
+        my passion for art has allowed me to translate ideas into visual forms, blending imagination with precision.
+        Numbers and patterns have always come naturally to me, and my aptitude in mathematics fuels my analytical thinking,
+        allowing me to approach challenges with logic, strategy, and a touch of creativity.
+      </p>
+      <p>
+        Driven by a relentless pursuit of perfection, I constantly refine my skills, whether sketching a building concept,
+        experimenting with design, or tackling complex mathematical problems. Each project is an opportunity to push
+        boundaries, learn from mistakes, and transform abstract ideas into tangible outcomes. My ultimate dream is to attend MIT,
+        where I hope to immerse myself in an environment that nurtures innovation, collaboration, and technical excellence,
+        and to contribute meaningfully to the worlds of architecture, design, and STEM.
+      </p>
+      <p>
+        Through my work, I strive to balance creativity and precision, imagination and discipline, always aiming to create designs
+        and solutions that are thoughtful, purposeful, and impactful.
+      </p>
+    </section>
+
+    <section class="gallery-head">
+      <div>
+        <h2 class="gallery-title">My Work</h2>
+        <p class="gallery-subtitle">Click any artwork to view it in full size. You can download from the viewer.</p>
+      </div>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search drawings…" aria-label="Search drawings" />
+        <select id="sort" aria-label="Sort drawings">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="title">Title A–Z</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery" aria-live="polite"></section>
+  </main>
+
+  <!-- Lightbox / Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-label="Artwork viewer">
+      <button class="icon-btn" id="closeBtn" aria-label="Close">✕</button>
+
+      <div class="modal-body">
+        <div class="modal-meta">
+          <div>
+            <h3 id="modalTitle"></h3>
+            <p id="modalDesc" class="muted"></p>
+          </div>
+
+          <div class="modal-actions">
+            <a id="downloadBtn" class="btn" download>Download</a>
+            <button id="copyLinkBtn" class="btn ghost">Copy link</button>
+          </div>
+        </div>
+
+        <div class="modal-image-wrap">
+          <img id="modalImg" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <span>© <span id="year"></span> Krishna Ailala</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
