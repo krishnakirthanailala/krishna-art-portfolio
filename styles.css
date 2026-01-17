@@ -233,45 +233,38 @@ select{ min-width: 160px; }
   border-radius: 18px;
   box-shadow: 0 30px 90px rgba(0,0,0,0.35);
   overflow: hidden;
+  max-height: 92vh;              /* IMPORTANT: keep inside viewport */
+  display: flex;
+  flex-direction: column;
 }
+
 .icon-btn{
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 12px;
+  right: 12px;
+  z-index: 5;                    /* IMPORTANT: above content */
   width: 40px;
   height: 40px;
   border-radius: 12px;
   border: 1px solid rgba(0,0,0,0.12);
-  background: rgba(255,255,255,0.85);
+  background: rgba(255,255,255,0.92);
   cursor: pointer;
   font-size: 18px;
 }
-.modal-body{ padding: 18px; }
+
+.modal-body{
+  padding: 18px;
+  overflow: auto;                /* IMPORTANT: enables scrolling */
+}
+
 .modal-meta{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 12px;
+  padding-right: 56px;           /* IMPORTANT: prevents overlap with X */
 }
-.modal-meta h3{
-  margin: 0;
-  font-family: "Playfair Display", serif;
-  font-size: 22px;
-}
-.muted{ margin: 6px 0 0; color: var(--muted); }
 
-.modal-actions{ display: flex; gap: 10px; flex-wrap: wrap; }
-.btn{
-  border: 1px solid rgba(0,0,0,0.14);
-  background: rgba(255,255,255,0.92);
-  border-radius: 12px;
-  padding: 10px 12px;
-  font: inherit;
-  cursor: pointer;
-}
-.btn.ghost{
-  background: transparent;
-}
 .modal-image-wrap{
   margin-top: 14px;
   border-radius: 14px;
@@ -279,6 +272,7 @@ select{ min-width: 160px; }
   border: 1px solid rgba(0,0,0,0.10);
   background: rgba(255,255,255,0.75);
 }
+
 .modal-image-wrap img{
   width: 100%;
   height: auto; /* original ratio */
