@@ -260,12 +260,28 @@ select{ min-width: 160px; }
   overflow: auto;                /* IMPORTANT: enables scrolling */
 }
 
-.modal-meta{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-  padding-right: 56px;           /* IMPORTANT: prevents overlap with X */
+.modal-header{
+  position: relative;
+  padding-right: 96px;   /* space reserved for X */
+}
+
+.modal-text h3{
+  margin: 0;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+.modal-text .muted{
+  margin: 6px 0 0;
+}
+
+.download-btn{
+  position: absolute;
+  top: 0;
+  right: 56px;           /* sits LEFT of the X */
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .modal-image-wrap{
