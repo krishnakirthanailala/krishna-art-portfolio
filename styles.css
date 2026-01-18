@@ -295,17 +295,26 @@ select{ min-width: 160px; }
 
 .dl-overlay{
   position: absolute;
-  right: 12px;
-  bottom: 12px;
+  right: 18px;
+  bottom: 18px;
   z-index: 3;
+
   border: 1px solid rgba(0,0,0,0.14);
   background: rgba(255,255,255,0.92);
   border-radius: 12px;
-  padding: 10px 12px;
+  padding: 10px 14px;
+
   font: inherit;
+  line-height: 1;
+  min-height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+
   cursor: pointer;
   text-decoration: none;
   box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+
   opacity: 0;
   transform: translateY(4px);
   transition: opacity 140ms ease, transform 140ms ease;
@@ -316,11 +325,12 @@ select{ min-width: 160px; }
   transform: translateY(0);
 }
 
-/* Always visible on mobile (no hover) */
 @media (max-width: 700px){
-  .dl-overlay{ opacity: 1; transform: none; }
+  .dl-overlay{
+    opacity: 1;
+    transform: none;
+  }
 }
-
 
 @media (max-width: 900px){
   .header-inner{ grid-template-columns: 1fr; }
