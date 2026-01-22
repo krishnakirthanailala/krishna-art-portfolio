@@ -34,5 +34,29 @@
     "file": "assets/art/Bike1.jpg",
     "date": "2025-7-9",
     "description": "The Kawasaki Ninja ZX-10R is a liter-class superbike known for its race-bred performance, advanced electronics, and aggressive styling."
+  },
+    {
+    "title": "Bike3",
+    "file": "assets/art/Bike3.jpg",
+    "date": "2025-06-26",
+    "description": "Goku, The Main Character Of The Anime Dragon Ball Z Known For His Plot Armor."
+  },
+  {
+    "title": "Cat1",
+    "file": "assets/art/Cat1.jpeg",
+    "date": "2025-10-12",
+    "description": "One of my dream cars, the Pagani Zonda R known for its design and experience. Only 15 were ever produced."
+  },
+  {
+    "title": "Cat2",
+    "file": "assets/art/Cat2.jpeg",
+    "date": "2025-10-13",
+    "description": "Another one of my dream cars, the Koenigsegg Regera known for its luxury and performance. Only 3 of this kind were ever made."
+  },
+  {
+    "title": "Sonic",
+    "file": "assets/art/Sonic.jpeg",
+    "date": "2025-7-9",
+    "description": "The Kawasaki Ninja ZX-10R is a liter-class superbike known for its race-bred performance, advanced electronics, and aggressive styling."
   }
 ]
